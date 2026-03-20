@@ -1,0 +1,13 @@
+{
+  "name": "@openclaw/totmedia-sales",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Tot Media Sales Routing Plugin",
+  "type": "module",
+  "dependencies": {
+    "@sinclair/typebox": "^0.34.0",
+    "apify-client": "^2.22.2",
+    "cheerio": "^1.2.0",
+    "googlethis": "^1.8.0"
+  }
+}

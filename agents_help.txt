@@ -1,0 +1,5 @@
+﻿
+> openclaw@2026.3.14 openclaw C:\Users\kural\Desktop\Client_Bot
+> node scripts/run-node.mjs "agents" "--help"
+
+тАЙELIFECYCLEтАЙ Command failed with exit code 1.

@@ -1,0 +1,27 @@
+﻿
+> openclaw@2026.3.14 openclaw C:\Users\kural\Desktop\Client_Bot
+> node scripts/run-node.mjs "config" "--help"
+
+
+ЁЯжЮ OpenClaw 2026.3.14 (6ba4d0d) тАФ Your .env is showing; don't worry, I'll pretend I didn't see it.
+
+Usage: openclaw config [options] [command]
+
+Non-interactive config helpers (get/set/unset/file/validate). Run without
+subcommand for the setup wizard.
+
+Options:
+  -h, --help           Display help for command
+  --section <section>  Configure wizard sections (repeatable). Use with no
+                       subcommand. (default: [])
+
+Commands:
+  file                 Print the active config file path
+  get                  Get a config value by dot path
+  set                  Set a config value by dot path
+  unset                Remove a config value by dot path
+  validate             Validate the current config against the schema without
+                       starting the gateway
+
+Docs: https://docs.openclaw.ai/cli/config
+

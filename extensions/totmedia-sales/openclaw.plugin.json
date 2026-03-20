@@ -1,0 +1,10 @@
+{
+  "id": "totmedia-sales",
+  "name": "Tot Media Sales",
+  "description": "Sales Lead Forwarding and Escalation tools",
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {}
+  }
+}
