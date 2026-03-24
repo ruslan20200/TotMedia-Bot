@@ -18,8 +18,8 @@
       "models": {
         "openrouter/openrouter/free": {}
       },
-      "contextTokens": 30000,
-      "bootstrapMaxChars": 10000,
+      "contextTokens": 500000,
+      "bootstrapMaxChars": 100000,
       "compaction": {
         "mode": "safeguard",
         "maxHistoryShare": 0.6,
