@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "lastTouchedVersion": "2026.3.14",
+    "lastTouchedAt": "2026-03-19T12:54:19.363Z"
+  },
+  "wizard": {
+    "lastRunAt": "2026-03-17T08:15:32.005Z",
+    "lastRunVersion": "2026.3.14",
+    "lastRunCommand": "doctor",
+    "lastRunMode": "local"
+  },
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "google/gemini-2.5-flash",
+        "fallbacks": ["openrouter/openrouter/free"]
+      },
+      "models": {
+        "openrouter/openrouter/free": {}
+      },
+      "contextTokens": 30000,
+      "bootstrapMaxChars": 10000,
+      "compaction": {
+        "mode": "safeguard",
+        "maxHistoryShare": 0.6,
+        "recentTurnsPreserve": 10,
+        "reserveTokens": 8000
+      },
+      "contextPruning": {
+        "mode": "cache-ttl",
+        "ttl": "5",
+        "keepLastAssistants": 2
+      },
+      "maxConcurrent": 4,
+      "subagents": {
+        "maxConcurrent": 8
+      }
+    }
+  },
+  "messages": {
+    "ackReactionScope": "group-mentions"
+  },
+  "commands": {
+    "native": "auto",
+    "nativeSkills": "auto",
+    "restart": true,
+    "ownerDisplay": "raw"
+  },
+  "channels": {
+    "whatsapp": {
+      "enabled": true,
+      "dmPolicy": "open",
+      "allowFrom": ["*"],
+      "groupPolicy": "allowlist",
+      "debounceMs": 0,
+      "mediaMaxMb": 50
+    },
+    "telegram": {
+      "enabled": true,
+      "dmPolicy": "open",
+      "allowFrom": ["*"],
+      "groupPolicy": "allowlist",
+      "streaming": "partial"
+    }
+  },
+  "gateway": {
+    "mode": "local",
+    "auth": {
+      "mode": "token",
+      "token": "b7c190c27fa7f7e39317f76c4612bc439ddafc8a20f610da"
+    }
+  },
+  "plugins": {
+    "load": {
+      "paths": ["c:/Users/kural/Desktop/Client_Bot/extensions/totmedia-sales"]
+    },
+    "entries": {
+      "totmedia-sales": {
+        "enabled": true
+      }
+    }
+  }
+}
